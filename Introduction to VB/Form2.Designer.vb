@@ -22,7 +22,7 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        RichTextBox1 = New RichTextBox()
+        txtSample = New RichTextBox()
         RichTextBox2 = New RichTextBox()
         RichTextBox3 = New RichTextBox()
         garamond = New RadioButton()
@@ -44,22 +44,21 @@ Partial Class Form2
         upload = New Button()
         Exitbtn = New Button()
         pic_area = New PictureBox()
-        PictureBox2 = New PictureBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
         GroupBox4.SuspendLayout()
         CType(pic_area, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' RichTextBox1
+        ' txtSample
         ' 
-        RichTextBox1.Location = New Point(13, 25)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(141, 48)
-        RichTextBox1.TabIndex = 0
-        RichTextBox1.Text = "Sample Text"
+        txtSample.AccessibleName = ""
+        txtSample.Location = New Point(13, 25)
+        txtSample.Name = "txtSample"
+        txtSample.Size = New Size(141, 48)
+        txtSample.TabIndex = 0
+        txtSample.Text = "Sample Text"
         ' 
         ' RichTextBox2
         ' 
@@ -134,7 +133,7 @@ Partial Class Form2
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(RichTextBox1)
+        GroupBox1.Controls.Add(txtSample)
         GroupBox1.FlatStyle = FlatStyle.System
         GroupBox1.Location = New Point(22, 35)
         GroupBox1.Name = "GroupBox1"
@@ -194,7 +193,7 @@ Partial Class Form2
         ' 
         bold.AutoSize = True
         bold.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        bold.Location = New Point(56, 93)
+        bold.Location = New Point(56, 98)
         bold.Name = "bold"
         bold.Size = New Size(51, 19)
         bold.TabIndex = 13
@@ -240,7 +239,7 @@ Partial Class Form2
         ' 
         blue.AutoSize = True
         blue.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        blue.Location = New Point(44, 93)
+        blue.Location = New Point(44, 98)
         blue.Name = "blue"
         blue.Size = New Size(56, 24)
         blue.TabIndex = 9
@@ -253,10 +252,10 @@ Partial Class Form2
         red.AutoSize = True
         red.Location = New Point(44, 151)
         red.Name = "red"
-        red.Size = New Size(104, 21)
+        red.Size = New Size(49, 21)
         red.TabIndex = 8
         red.TabStop = True
-        red.Text = "RadioButton3"
+        red.Text = "Red"
         red.UseVisualStyleBackColor = True
         ' 
         ' upload
@@ -298,21 +297,12 @@ Partial Class Form2
         pic_area.TabIndex = 20
         pic_area.TabStop = False
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Location = New Point(390, 495)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(100, 50)
-        PictureBox2.TabIndex = 21
-        PictureBox2.TabStop = False
-        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 17F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlLightLight
         ClientSize = New Size(800, 567)
-        Controls.Add(PictureBox2)
         Controls.Add(pic_area)
         Controls.Add(Exitbtn)
         Controls.Add(upload)
@@ -335,12 +325,11 @@ Partial Class Form2
         GroupBox4.ResumeLayout(False)
         GroupBox4.PerformLayout()
         CType(pic_area, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents txtSample As RichTextBox
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents RichTextBox3 As RichTextBox
     Friend WithEvents garamond As RadioButton
@@ -362,5 +351,4 @@ Partial Class Form2
     Friend WithEvents upload As Button
     Friend WithEvents Exitbtn As Button
     Friend WithEvents pic_area As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
 End Class

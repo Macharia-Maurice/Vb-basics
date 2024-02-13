@@ -22,29 +22,16 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
-        ContextMenuStrip1 = New ContextMenuStrip(components)
-        ContextMenuStrip2 = New ContextMenuStrip(components)
         Button1 = New Button()
         Button2 = New Button()
         SuspendLayout()
-        ' 
-        ' ContextMenuStrip1
-        ' 
-        ContextMenuStrip1.Name = "ContextMenuStrip1"
-        ContextMenuStrip1.Size = New Size(61, 4)
-        ' 
-        ' ContextMenuStrip2
-        ' 
-        ContextMenuStrip2.Name = "ContextMenuStrip2"
-        ContextMenuStrip2.Size = New Size(61, 4)
         ' 
         ' Button1
         ' 
         Button1.FlatAppearance.BorderColor = Color.Black
         Button1.FlatAppearance.BorderSize = 3
         Button1.FlatStyle = FlatStyle.Popup
-        Button1.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.Location = New Point(145, 206)
         Button1.Name = "Button1"
         Button1.Size = New Size(171, 41)
@@ -58,7 +45,7 @@ Partial Class Form1
         Button2.FlatAppearance.BorderColor = Color.Black
         Button2.FlatAppearance.BorderSize = 3
         Button2.FlatStyle = FlatStyle.Popup
-        Button2.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.Location = New Point(367, 206)
         Button2.Name = "Button2"
         Button2.Size = New Size(171, 41)
@@ -69,7 +56,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(800, 527)
@@ -80,9 +67,6 @@ Partial Class Form1
         Text = "Welcome Form"
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
 

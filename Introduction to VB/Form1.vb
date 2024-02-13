@@ -9,8 +9,13 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MessageBox.Show("Object Demonstrations")
+        ' Create an instance of Form2
+        Dim form2Instance As New Form2()
 
+        ' Show Form2
+        form2Instance.Show()
+
+        Me.Hide()
 
     End Sub
 
