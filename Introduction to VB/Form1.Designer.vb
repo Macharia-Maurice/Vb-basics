@@ -25,8 +25,8 @@ Partial Class Form1
         components = New ComponentModel.Container()
         ContextMenuStrip1 = New ContextMenuStrip(components)
         ContextMenuStrip2 = New ContextMenuStrip(components)
-        RichTextBox1 = New RichTextBox()
-        RichTextBox2 = New RichTextBox()
+        Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' ContextMenuStrip1
@@ -39,40 +39,51 @@ Partial Class Form1
         ContextMenuStrip2.Name = "ContextMenuStrip2"
         ContextMenuStrip2.Size = New Size(61, 4)
         ' 
-        ' RichTextBox1
+        ' Button1
         ' 
-        RichTextBox1.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RichTextBox1.Location = New Point(128, 191)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(171, 47)
-        RichTextBox1.TabIndex = 3
-        RichTextBox1.Text = "Load Object Demo"
+        Button1.FlatAppearance.BorderColor = Color.Black
+        Button1.FlatAppearance.BorderSize = 3
+        Button1.FlatStyle = FlatStyle.Popup
+        Button1.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(145, 206)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(171, 41)
+        Button1.TabIndex = 5
+        Button1.Text = "Load Object Demo"
+        Button1.TextAlign = ContentAlignment.TopLeft
+        Button1.UseVisualStyleBackColor = True
         ' 
-        ' RichTextBox2
+        ' Button2
         ' 
-        RichTextBox2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RichTextBox2.ForeColor = SystemColors.InfoText
-        RichTextBox2.Location = New Point(377, 191)
-        RichTextBox2.Name = "RichTextBox2"
-        RichTextBox2.Size = New Size(171, 47)
-        RichTextBox2.TabIndex = 4
-        RichTextBox2.Text = "Exit"
+        Button2.FlatAppearance.BorderColor = Color.Black
+        Button2.FlatAppearance.BorderSize = 3
+        Button2.FlatStyle = FlatStyle.Popup
+        Button2.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(367, 206)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(171, 41)
+        Button2.TabIndex = 6
+        Button2.Text = "EXIT"
+        Button2.TextAlign = ContentAlignment.TopLeft
+        Button2.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(800, 527)
-        Controls.Add(RichTextBox2)
-        Controls.Add(RichTextBox1)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Name = "Form1"
+        ShowIcon = False
         Text = "Welcome Form"
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 
 End Class
